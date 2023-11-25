@@ -1,6 +1,5 @@
 // 处理计算页面性能的函数
 
-
 const processData = (p) => {
   const data = {
     prevPage: p.fetchStart - p.navigationStart, // 上个页面到这个页面的时长
@@ -36,11 +35,33 @@ const load = (cb) => {
   window.addEventListener('load', check, false)
 }
 
+const domready = (cb) => {
+  let timer
+  const check = () => {
+    if(performance.timing.domInteractive) {
+      clearTimeout(timer)
+      cb()
+    }else {
+      timer = setTimeout(check, 100)
+    }
+  }
+  window.addEventListener('DOMContentLoaded', check, false)
+}
+
 export default {
   init(cb) {
+    // 有可能没触发onload dom解析后统计
+    // 用户可能没加载完就关闭页面了
+    domready(() => {
+      const perfData = performance.timing
+      const data = processData(perfData)
+      data.type = 'domReady'
+      cb(data)
+    })
     load(() => {
       const perfData = performance.timing
       const data = processData(perfData)
+      data.type = 'loaded'
       cb(data)
     })
   }

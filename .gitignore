@@ -1,0 +1,16 @@
+node_modules
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Editor files
+.idea
+.vscode
+
+# log files
+.log*
+
+# build files
+lib/monitor.js

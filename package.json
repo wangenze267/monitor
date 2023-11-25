@@ -1,0 +1,26 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "A front-end monitoring tool for a website 🔦",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangenze267/monitor.git"
+  },
+  "author": "Ned",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangenze267/monitor/issues"
+  },
+  "homepage": "https://github.com/wangenze267/monitor#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}

@@ -13,3 +13,11 @@
 🪄 页面的错误捕获
 
 🪄 监控用户行为
+
+## 使用
+```js
+import { Perf } from 'monitor'
+Perf.init((data) => {
+  console.log(data)
+})
+```

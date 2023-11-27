@@ -21,3 +21,12 @@ Perf.init((data) => {
  *  new Image().src = 'p.gif?参数'
  *  参数使用 formatObj 函数转换
  */
+
+// 导出
+export default {
+  Perf
+}
+
+export {
+  Perf
+}

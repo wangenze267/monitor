@@ -1,5 +1,6 @@
 import Perf from './funcs/performance.js'
 import Resource from './funcs/resource.js'
+import Tool from './utils/index.js'
 // 监控页面性能 
 // 即 算时间差 （各种）
 // Performance Api
@@ -38,5 +39,6 @@ Resource.init((data) => {
 // 导出
 export default {
   Perf,
-  Resource
+  Resource,
+  Tool
 }

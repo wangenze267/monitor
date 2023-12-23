@@ -1,5 +1,5 @@
 {
-  "name": "monitor",
+  "name": "website-monitoring",
   "version": "0.0.1",
   "description": "A front-end monitoring tool for a website 🔦",
   "main": "index.js",

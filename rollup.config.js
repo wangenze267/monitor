@@ -4,6 +4,7 @@ export default {
   output: {
     file: './lib/monitor.js',
     format: 'umd',
+    name: 'monitor',
   },
   watch: {
     exclude: 'node_modules/**'

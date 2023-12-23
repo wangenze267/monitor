@@ -1,5 +1,9 @@
-# monitor
+# website-monitoring
 🔦 A front-end monitoring tool for a website
+
+一个用来监控网站数据的前端工具包
+
+> npm install website-monitoring
 
 ---
 ## 待完成的饼 🍕

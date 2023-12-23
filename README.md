@@ -37,14 +37,14 @@
 ## 使用
 ```js
 // 监控页面性能
-import { Perf } from 'monitor'
-Perf.init((data) => {
+import Monitor from 'website-monitoring'
+
+Monitor.perf.init((data) => {
   console.log(data)
 })
 
 // 监控页面静态资源加载情况
-import { Resource } from 'monitor'
-Resource.init((data) => {
+Monitor.resource.init((data) => {
   console.log(data)
 })
 ```

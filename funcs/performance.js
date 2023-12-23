@@ -15,7 +15,7 @@ const processData = (p) => {
     // dom 解析时间
     dom: p.domComplete - p.domLoading,
     // onload 执行时间
-    load: p.loadEventEnd - loadEventStart,
+    load: p.loadEventEnd - p.loadEventStart,
     // 总计
     total: p.loadEventEnd - p.navigationStart,
   }

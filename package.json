@@ -1,6 +1,6 @@
 {
   "name": "website-monitoring",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A front-end monitoring tool for a website 🔦",
   "main": "index.js",
   "scripts": {

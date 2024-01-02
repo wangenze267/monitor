@@ -12,7 +12,7 @@ export default {
       const stack = error.stack
       const matchUrl = stack.match(/http:\/\/[^\n]/)[0]
       info.fileName = matchUrl.match(/http:\/\/(?:\S*)\.js/)[0]
-      const [, row, column] = matchUrl.match(/:(\d+):(\d+)/)
+      const [row, column] = matchUrl.match(/((?<=:)(\d+))/g)
       info.row = row
       info.column = column
       // 上线的时候代码会压缩 source-map
